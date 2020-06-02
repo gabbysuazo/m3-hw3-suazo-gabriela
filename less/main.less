@@ -12,6 +12,10 @@ body {
 	color: @text-color
 }
 
+img {
+	width: 100%;
+}
+
 header {
   background-color: @yellow;
   color: @text-color;
@@ -41,9 +45,6 @@ span {
 		width: 30%;
 		margin-top: 55px;
 	}
-	img {
-		width: 100%;
-	}
 	button {margin-top: 10px;
 		margin-bottom: 115px
 	}
@@ -67,9 +68,6 @@ button {
 	figure {
 		width: 60%;
 	}
-	img {
-		width: 100%;
-	}
 }
 
 .dine-in {
@@ -91,12 +89,19 @@ button {
 	figure {
 		width: 50%;
 	}
-	img {
-		width: 100%;
-	}
 }
 
 .divider {
 	background-color: @yellow;
 	height: 8px;
+}
+
+footer {
+	background-color: @black;
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+	figure {
+		width: 20%;
+	}
 }

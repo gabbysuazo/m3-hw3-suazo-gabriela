@@ -21,6 +21,9 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #050500;
 }
+img {
+  width: 100%;
+}
 header {
   background-color: #f8df1f;
   color: #050500;
@@ -57,9 +60,6 @@ span {
   width: 30%;
   margin-top: 55px;
 }
-.hero img {
-  width: 100%;
-}
 .hero button {
   margin-top: 10px;
   margin-bottom: 115px;
@@ -91,9 +91,6 @@ button {
 .best-burgers figure {
   width: 60%;
 }
-.best-burgers img {
-  width: 100%;
-}
 .dine-in {
   background-color: #f3f3f3;
   padding: 50px 0;
@@ -122,10 +119,20 @@ button {
 .dine-in figure {
   width: 50%;
 }
-.dine-in img {
-  width: 100%;
-}
 .divider {
   background-color: #f8df1f;
   height: 8px;
+}
+footer {
+  background-color: #080801;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+}
+footer figure {
+  width: 20%;
 }
