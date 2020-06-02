@@ -8,7 +8,8 @@
 }
 
 body {
-  font-family: @font;
+  font-family: @main-font;
+	color: @text-color
 }
 
 header {
@@ -24,9 +25,10 @@ header {
     display: inline;
     padding-right: 55px;
   }
-  span {
-    .span();
-  }
+}
+
+span {
+	.span();
 }
 
 .hero {
@@ -49,4 +51,52 @@ header {
 
 button {
   .button();
+}
+
+.best-burgers {
+	background-color: #fff;
+	padding: 50px 0;
+	div {
+		width: 80%;
+		margin: auto;
+		display: flex;
+	}
+	article {
+		margin-right: 100px;
+	}
+	figure {
+		width: 60%;
+	}
+	img {
+		width: 100%;
+	}
+}
+
+.dine-in {
+	background-color: @gray;
+	padding: 50px 0;
+	display: flex;
+	justify-content: flex-end;
+	div {
+		width: 80%;
+		display: flex;
+		align-items: center;
+	}
+	article {
+		margin-left: 100px;
+	}
+	.dine-black {
+		color: @text-color;
+	}
+	figure {
+		width: 50%;
+	}
+	img {
+		width: 100%;
+	}
+}
+
+.divider {
+	background-color: @yellow;
+	height: 8px;
 }

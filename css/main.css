@@ -19,6 +19,7 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
+  color: #050500;
 }
 header {
   background-color: #f8df1f;
@@ -34,7 +35,7 @@ header li {
   display: inline;
   padding-right: 55px;
 }
-header span {
+span {
   text-transform: uppercase;
   color: #ee252f;
 }
@@ -72,4 +73,59 @@ button {
   border-radius: 8px;
   background-color: #f8df1f;
   padding: 15px 25px;
+}
+.best-burgers {
+  background-color: #fff;
+  padding: 50px 0;
+}
+.best-burgers div {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.best-burgers article {
+  margin-right: 100px;
+}
+.best-burgers figure {
+  width: 60%;
+}
+.best-burgers img {
+  width: 100%;
+}
+.dine-in {
+  background-color: #f3f3f3;
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.dine-in div {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dine-in article {
+  margin-left: 100px;
+}
+.dine-in .dine-black {
+  color: #050500;
+}
+.dine-in figure {
+  width: 50%;
+}
+.dine-in img {
+  width: 100%;
+}
+.divider {
+  background-color: #f8df1f;
+  height: 8px;
 }
