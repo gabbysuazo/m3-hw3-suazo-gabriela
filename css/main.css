@@ -1,0 +1,20 @@
+.button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #050500;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 8px;
+  background-color: #f8df1f;
+  padding: 15px 25px;
+}
+button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #050500;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 8px;
+  background-color: #f8df1f;
+  padding: 15px 25px;
+}
