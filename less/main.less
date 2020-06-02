@@ -16,9 +16,20 @@ img {
 	width: 100%;
 }
 
+h2 {
+	font-size: @headings;
+	font-weight: @bold-font;
+}
+
+p {
+	font-size: @text;
+	font-weight: @normal-font;
+}
+
 header {
   background-color: @yellow;
   color: @text-color;
+	font-size: @links;
   font-weight: @bold-font;
   nav {
     width: 80%;
@@ -36,8 +47,7 @@ span {
 }
 
 .hero {
-	background: url("../img/banner-bg.png");
-	background-position: center;
+	.hero();
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -45,7 +55,7 @@ span {
 		width: 30%;
 		margin-top: 55px;
 	}
-	button {margin-top: 10px;
+	button {
 		margin-bottom: 115px
 	}
 }
@@ -55,18 +65,26 @@ button {
 }
 
 .best-burgers {
-	background-color: #fff;
+	background-color: @white;
 	padding: 50px 0;
 	div {
 		width: 80%;
 		margin: auto;
 		display: flex;
+		align-items: center;
 	}
 	article {
 		margin-right: 100px;
 	}
 	figure {
 		width: 60%;
+	}
+	h2 {
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	p {
+		margin-bottom: 5px;
 	}
 }
 
@@ -88,6 +106,12 @@ button {
 	}
 	figure {
 		width: 50%;
+	}
+	h2 {
+		margin-bottom: 10px;
+	}
+	p {
+		margin-bottom: 5px;
 	}
 }
 
