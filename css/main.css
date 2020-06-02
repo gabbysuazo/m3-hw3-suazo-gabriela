@@ -1,3 +1,11 @@
+.hero {
+  background-image: url(img/banner-bg.png);
+  background-color: rgba(59, 56, 56, 0.33);
+}
+.span {
+  text-transform: uppercase;
+  color: #ee252f;
+}
 .button {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -7,6 +15,35 @@
   border-radius: 8px;
   background-color: #f8df1f;
   padding: 15px 25px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  background-color: #f8df1f;
+  color: #050500;
+  font-weight: 500;
+}
+header nav {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0;
+}
+header li {
+  display: inline;
+  padding-right: 55px;
+}
+header span {
+  text-transform: uppercase;
+  color: #ee252f;
+}
+.hero {
+  background-image: url(img/banner-bg.png);
 }
 button {
   font-family: 'Roboto', sans-serif;
