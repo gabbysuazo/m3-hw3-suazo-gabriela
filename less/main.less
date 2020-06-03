@@ -7,6 +7,8 @@
 	border: 0;
 }
 
+/* *************** ACROSS THE BOARD RULES *************** */
+
 body {
   font-family: @main-font;
 	color: @text-color
@@ -26,6 +28,18 @@ p {
 	font-weight: @normal-font;
 }
 
+span {
+	.span();
+}
+
+button {
+  .button();
+}
+
+/* *************** ACROSS THE BOARD RULES *************** */
+
+/* *************** HEADER *************** */
+
 header {
   background-color: @yellow;
   color: @text-color;
@@ -38,13 +52,14 @@ header {
   }
   li {
     display: inline;
-    padding-right: 55px;
+    padding-right: 15px;
+		line-height: 2;
   }
 }
 
-span {
-	.span();
-}
+/* *************** HEADER *************** */
+
+/* *************** HERO IMAGE SECTION *************** */
 
 .hero {
 	.hero();
@@ -52,32 +67,34 @@ span {
 	flex-direction: column;
 	align-items: center;
 	figure {
-		width: 30%;
+		width: 80%;
 		margin-top: 55px;
+		max-width: 430px;
 	}
 	button {
 		margin-bottom: 115px
 	}
 }
 
-button {
-  .button();
-}
+/* *************** HERO IMAGE SECTION *************** */
+
+/* *************** SECTION 1 *************** */
 
 .best-burgers {
 	background-color: @white;
 	padding: 50px 0;
 	div {
 		width: 80%;
+		max-width: 1200px;
 		margin: auto;
 		display: flex;
+		flex-direction: column;
 		align-items: center;
-	}
-	article {
-		margin-right: 100px;
 	}
 	figure {
 		width: 60%;
+		max-width: 200px;
+		margin-top: 50px;
 	}
 	h2 {
 		text-transform: uppercase;
@@ -88,24 +105,28 @@ button {
 	}
 }
 
+/* *************** SECTION 1 *************** */
+
+/* *************** SECTION 2 *************** */
+
 .dine-in {
 	background-color: @gray;
 	padding: 50px 0;
-	display: flex;
-	justify-content: flex-end;
-	div {
-		width: 80%;
-		display: flex;
-		align-items: center;
-	}
-	article {
-		margin-left: 100px;
-	}
 	.dine-black {
 		color: @text-color;
 	}
+	div {
+		width: 80%;
+		max-width: 1200px;
+		margin: auto;
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
 	figure {
-		width: 50%;
+		width: 60%;
+		max-width: 150px;
+		margin-top: 50px;
 	}
 	h2 {
 		margin-bottom: 10px;
@@ -114,6 +135,10 @@ button {
 		margin-bottom: 5px;
 	}
 }
+
+/* *************** SECTION 2 *************** */
+
+/* *************** FOOTER *************** */
 
 .divider {
 	background-color: @yellow;
@@ -129,3 +154,64 @@ footer {
 		width: 20%;
 	}
 }
+
+/* *************** FOOTER *************** */
+
+/* *************** MEDIA QUERY MIN WIDTH 345PX AND MAX WIDTH 435PX *************** */
+
+@media (min-width: 345px) and (max-width: 435px) {
+	header li {
+		padding-right: 30px;
+	}
+}
+
+/* *************** MEDIA QUERY MIN WIDTH 345PX AND MAX WIDTH 435PX *************** */
+/* *************** MEDIA QUERY MIN WIDTH 410PX AND MAX WIDTH 436PX *************** */
+
+
+@media (min-width: 410px) and (max-width: 436px) {
+	header li {
+		padding-right: 40px;
+	}
+}
+
+/* *************** MEDIA QUERY MIN WIDTH 410PX AND MAX WIDTH 436PX *************** */
+/* ************************* MEDIA QUERY MIN WIDTH 720PX ************************* */
+
+@media (min-width: 720px) {
+	header li {
+		padding-right: 55px;
+	}
+
+	.hero figure {
+		width: 430px;
+	}
+
+	.best-burgers div {
+		flex-direction: row;
+	}
+
+	.best-burgers article {
+		margin-right: 100px;
+	}
+
+	.best-burgers figure {
+		margin-top: 0;
+		width: 180%;
+	}
+
+	.dine-in div {
+		flex-direction: row;
+	}
+
+	.dine-in article {
+		margin-left: 100px;
+	}
+
+	.dine-in figure {
+		margin-top: 0;
+		width: 180%;
+	}
+}
+
+/* ************************* MEDIA QUERY MIN WIDTH 720PX ************************* */
